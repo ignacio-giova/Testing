@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tu Nombre">
+    <meta name="description" content="Ejemplo práctico con varias etiquetas HTML.">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Ejemplo Completo de HTML</title>
+    <style>
+        header {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        section {
+            margin: 20px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            background-color: #ddd;
+            padding: 10px;
+        }
+        dialog {
+            border: 1px solid #000;
+            padding: 10px;
+            background: #fff;
+        }
+        .resaltado {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado principal -->
+    <header>
+        <h1>Bienvenido a mi página</h1>
+        <p>Ejemplo práctico con varias etiquetas HTML</p>
+    </header>
+
+    <!-- Navegación principal -->
+    <nav>
+        <ul>
+            <li><a href="#introduccion">Inicio</a></li>
+            <li><a href="#multimedia">Multimedia</a></li>
+            <li><a href="#formulario">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de Introducción -->
+    <section id="introduccion">
+        <h2>Introducción</h2>
+        <p>Este documento incluye <strong>muchas etiquetas</strong> de HTML para demostrar su uso.</p>
+        <blockquote cite="https://developer.mozilla.org">
+            "HTML es el lenguaje base de la web."
+        </blockquote>
+        <details>
+            <summary>Más información</summary>
+            <p>HTML define la estructura y contenido de una página web.</p>
+        </details>
+        <dialog id="dialogo-ejemplo">
+            Este es un ejemplo de un cuadro de diálogo.
+            <button onclick="document.getElementById('dialogo-ejemplo').close()">Cerrar</button>
+        </dialog>
+        <button onclick="document.getElementById('dialogo-ejemplo').showModal()">Mostrar diálogo</button>
+        <p>Este es un ejemplo de un texto con una palabra <span class="resaltado">resaltada</span> usando la etiqueta <code>&lt;span&gt;</code>.</p>
+    </section>
+
+    <!-- Sección de Multimedia -->
+    <section id="multimedia">
+        <h2>Elementos Multimedia</h2>
+        <figure>
+            <img src="https://via.placeholder.com/300" alt="Ejemplo de imagen" width="300">
+            <figcaption>Una imagen de ejemplo.</figcaption>
+        </figure>
+        <video controls width="400">
+            <source src="video.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </section>
+
+    <!-- Sección de Formulario -->
+    <section id="formulario">
+        <h2>Contacto</h2>
+        <form action="/submit" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje"></textarea><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Lista ordenada -->
+    <section id="listas">
+        <h2>Listas Ordenadas</h2>
+        <ol>
+            <li>Paso 1: Aprender HTML</li>
+            <li>Paso 2: Practicar CSS</li>
+            <li>Paso 3: Implementar JavaScript</li>
+        </ol>
+        <menu>
+            <li>Menú de herramientas</li>
+            <li>Opciones de configuración</li>
+        </menu>
+    </section>
+
+    <!-- Tabla de ejemplos -->
+    <section id="tabla">
+        <h2>Tabla de Ejemplo</h2>
+        <table border="1">
+            <caption>Información de ejemplo</caption>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Ciudad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Juan</td>
+                    <td>25</td>
+                    <td>México</td>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td>30</td>
+                    <td>Madrid</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Mi Página. Todos los derechos reservados.</p>
+        <address>
+            Contacto: <a href="mailto:info@mipagina.com">info@mipagina.com</a>
+        </address>
+    </footer>
+</body>
+</html>
